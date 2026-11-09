@@ -140,3 +140,16 @@ footer a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px
   .topic-nav ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px 8px; }
   .breadcrumb { margin-bottom: 16px; }
 }
+
+/* Question guides and sourced method entries */
+.reading-layout { max-width: 780px; margin: 0 auto 52px; }
+.reading-section { margin-top: 26px; padding-top: 20px; border-top: 1px solid var(--line); }
+.reading-section p { margin: 8px 0 0; color: var(--muted); }
+.reading-points { margin: 8px 0 0; padding-inline-start: 1.3em; }
+.reading-points li + li { margin-top: 7px; }
+.question-item .entry-label { margin-bottom: 4px; color: var(--muted); font-size: 12px; }
+.source-list { margin-top: 14px; }
+.question-item a:hover { color: #242622; }
+@media (max-width: 560px) {
+  .reading-layout { margin-bottom: 36px; }
+}

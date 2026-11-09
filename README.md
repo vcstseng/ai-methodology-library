@@ -25,13 +25,17 @@
 
 日常 token 用量監控放在營運與演進，按合格件數比較 token 效率放在驗證與衡量。
 
-**Layer 3** 將收錄具體工作方法和管理手段。一個方法可以對應多個問題，內容維護一份。條目會說明做法、適用情境與限制，並區分作者主張、公開案例和實測結果。
+**Layer 3** 收錄有可追溯來源的工作方法和管理手段。一個方法可以對應多個問題，內容維護一份。首個問題頁是[試行成功後，怎麼變成團隊的日常工作？](site/questions/pilot-to-daily-work.html)，收錄 [Microsoft Copilot Champions](site/methods/copilot-champions.html) 與 [GOV.UK Beta → Live 交接](site/methods/govuk-beta-to-live.html)。
+
+**Layer 4** 是方法頁內的來源與證據，標明原始指引、實作紀錄或供應商發布的採用案例，以及各來源能支持的說法。
 
 ## 專案檔案
 
 - `site/index.html` — Layer 1 首頁。
 - `site/topics/` — 六個 Layer 2 問題頁。
-- `site/styles.css` — 首頁與主題頁的共用樣式。
+- `site/questions/` — 問題頁與相關方法的入口。
+- `site/methods/` — 方法條目與來源紀錄。
+- `site/styles.css` — 網站的共用樣式。
 - `content/` — 保留給方法與主題條目。
 - `sources/` — 保留給原始來源與研究筆記。
 
