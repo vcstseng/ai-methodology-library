@@ -18,10 +18,6 @@
       <nav class="breadcrumb" aria-label="目前位置">
         <a href="../index.html">方法目錄</a>
         <span aria-hidden="true">/</span>
-        <a href="../topics/governance.html">治理與管理</a>
-        <span aria-hidden="true">/</span>
-        <a href="../questions/ai-incident-response.html">AI 事件的暫停、復原與通知</a>
-        <span aria-hidden="true">/</span>
         <span aria-current="page">Google SRE 的事件指揮分工</span>
       </nav>
       <article class="reading-layout">
@@ -39,10 +35,16 @@
           </ul>
         </section>
         <section class="reading-section" aria-labelledby="fit">
-          <h2 id="fit">為什麼收在這一題</h2>
+          <h2 id="fit">適用範圍</h2>
           <p>原做法適用於數位服務事件。移用到 AI 時，可以另外在手冊記明誰核准停用、恢復和對外通知。</p>
         </section>
-        <p><a href="../questions/pilot-staff-briefing-and-feedback.html">相關問題：試行員工要去哪裡回報問題？</a></p>
+        <section class="reading-section" id="related-questions" aria-labelledby="related-questions-title">
+          <h2 id="related-questions-title">這個方法可用在哪些問題</h2>
+          <ul class="reading-points">
+            <li><a href="../questions/ai-incident-response.html">出事時誰能暫停、復原和通知受影響的人？誰對外負責？</a></li>
+            <li><a href="../questions/pilot-staff-briefing-and-feedback.html">怎麼讓參與試行的員工知道要做什麼、去哪裡回報問題？</a></li>
+          </ul>
+        </section>
         <section class="reading-section" id="sources" aria-labelledby="sources-title">
           <div class="section-header">
             <h2 id="sources-title">來源與證據</h2>
@@ -64,7 +66,7 @@
       </article>
     </main>
     <footer>
-      <a href="../questions/ai-incident-response.html">返回問題頁</a>
+      <a href="#related-questions">查看適用的問題</a>
       <a href="#top">回到頂端 <span aria-hidden="true">↑</span></a>
     </footer>
   </div>

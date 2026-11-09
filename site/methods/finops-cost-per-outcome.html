@@ -35,12 +35,12 @@
           <ul class="reading-points">
             <li>為每個用途訂好品質門檻，清楚定義什麼叫一件合格成果。</li>
             <li>依 FinOps 的例式，用所有執行的費用除以達到品質門檻的件數，因此失敗和重試的費用留在分子。</li>
-            <li>比較同一工作範圍與驗收標準下的成本；同時保留通過率，避免只看平均。</li>
+            <li>按任務的品質要求測試候選模型。也可只擷取相關內容，或在供應商支援時快取固定的提示前綴。</li>
           </ul>
         </section>
         <section class="reading-section" aria-labelledby="fit">
           <h2 id="fit">為什麼收在這一題</h2>
-          <p>「所有調用的 token 總量 ÷ 合格件數」是本站依同一邏輯整理的用量指標。Token 用量和費用要分別記；合格件數為零時不計比值。</p>
+          <p>「所有調用的 token 總量 ÷ 合格件數」是本站依同一邏輯整理的用量指標。比較時可一次改一項條件，並用相同的案例、驗收標準和成本範圍。分別記錄通過率、token 和費用，合格件數為零時只列總量和通過率。</p>
         </section>
         <section class="reading-section" id="sources" aria-labelledby="sources-title">
           <div class="section-header">
@@ -51,7 +51,7 @@
             <li class="question-item">
               <p class="entry-label">原始指引與公式</p>
               <h3><a href="https://www.finops.org/wg/finops-for-ai-overview/">FinOps Foundation — FinOps for AI Overview</a></h3>
-              <p>KPI 表提供所有執行成本除以達品質門檻件數的例式，並建議同時設定成本和功能基線。</p>
+              <p>KPI 表提供合格成果的成本公式。Optimize Usage &amp; Cost 一節說明模型選擇、減少輸入和提示快取。</p>
             </li>
             <li class="question-item">
               <p class="entry-label">配套指引</p>

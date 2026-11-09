@@ -18,10 +18,6 @@
       <nav class="breadcrumb" aria-label="目前位置">
         <a href="../index.html">方法目錄</a>
         <span aria-hidden="true">/</span>
-        <a href="../topics/measurement.html">驗證與衡量</a>
-        <span aria-hidden="true">/</span>
-        <a href="../questions/detect-plausible-errors.html">查證來源與重算</a>
-        <span aria-hidden="true">/</span>
         <span aria-current="page">GOV.UK AQuA Book 的分析覆核</span>
       </nav>
       <article class="reading-layout">
@@ -34,14 +30,20 @@
           <h2 id="approach">原作者怎麼做</h2>
           <ul class="reading-points">
             <li>先確認分析是否回答原本的需求，並檢查輸入、假設與計算是否按設計運作。</li>
-            <li>可以請另一位分析人員重跑，或用不同算法做合理性檢查。依結果的影響和分析的複雜度安排覆核。</li>
+            <li>可安排同儕覆核或用獨立來源核對結果。依結果的影響和分析的複雜度安排覆核。</li>
             <li>保留可追溯的檢查紀錄，並讓分析人員與覆核人員的責任清楚。</li>
           </ul>
         </section>
         <section class="reading-section" aria-labelledby="fit">
-          <h2 id="fit">為什麼收在這一題</h2>
-          <p>AQuA Book 原本用於英國政府的分析工作。對 AI 產出的表格或估算，這些做法可用來核對分析和分工。重新計算支持的是被重算的部分。</p>
-          <p><a href="../questions/independent-acceptance-review.html">相關問題：誰來驗收？什麼時候需要獨立覆核？</a></p>
+          <h2 id="fit">適用範圍</h2>
+          <p>AQuA Book 原本用於英國政府的分析工作。對 AI 產出的表格或估算，這些做法可用來核對分析和分工。由另一位分析人員重算關鍵數字，或用不同算法交叉檢查，是本庫將分析覆核應用到這類交付的示例。</p>
+        </section>
+        <section class="reading-section" id="related-questions" aria-labelledby="related-questions-title">
+          <h2 id="related-questions-title">這個方法可用在哪些問題</h2>
+          <ul class="reading-points">
+            <li><a href="../questions/detect-plausible-errors.html">怎麼抓出看起來正確、其實有錯的結果？</a></li>
+            <li><a href="../questions/independent-acceptance-review.html">誰來驗收？什麼時候需要獨立覆核？</a></li>
+          </ul>
         </section>
         <section class="reading-section" id="sources" aria-labelledby="sources-title">
           <div class="section-header">
@@ -55,16 +57,16 @@
               <p>現行指引支持按風險安排分析品質保證，以及分析人員和覆核人員的分工。</p>
             </li>
             <li class="question-item">
-              <p class="entry-label">歷史版本的操作例</p>
-              <h3><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/416478/aqua_book_final_web.pdf">GOV.UK — The Aqua Book，第 6.24–6.26 段</a></h3>
-              <p>早期版本具體列出另一人重跑、用不同算法檢查和同儕覆核。此處引用為做法示例。</p>
+              <p class="entry-label">覆核活動</p>
+              <h3><a href="https://www.gov.uk/guidance/the-aqua-book#assurance-activities">GOV.UK — The AQuA Book，Assurance activities</a></h3>
+              <p>列出分析人員測試、同儕覆核與獨立來源核對等做法。</p>
             </li>
           </ul>
         </section>
       </article>
     </main>
     <footer>
-      <a href="../questions/detect-plausible-errors.html">返回問題頁</a>
+      <a href="#related-questions">查看適用的問題</a>
       <a href="#top">回到頂端 <span aria-hidden="true">↑</span></a>
     </footer>
   </div>
