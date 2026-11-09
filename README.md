@@ -4,6 +4,8 @@
 
 ## 預覽首頁
 
+[開啟 GitHub Pages](https://vcstseng.github.io/ai-methodology-library/)
+
 開啟 [`site/index.html`](site/index.html) 的本機檔案，即可瀏覽第一層目錄並展開各主題的簡介。首頁使用 HTML 與 CSS，直接用瀏覽器開啟即可。
 
 ## 第一層目錄
