@@ -2,32 +2,37 @@
 
 整理近兩年因生成式 AI 與 agents 而出現或重新設計的工作方法，讓企業依手上的導入問題查找、比較與試行做法。
 
-## 預覽首頁
+## 瀏覽網站
 
 [開啟 GitHub Pages](https://vcstseng.github.io/ai-methodology-library/)
 
-開啟 [`site/index.html`](site/index.html) 的本機檔案，即可瀏覽第一層目錄和各主題的簡介。首頁使用 HTML 與 CSS，直接用瀏覽器開啟即可。
+也可以直接用瀏覽器開啟本機的 [`site/index.html`](site/index.html)。網站使用靜態 HTML 與共用 CSS。
 
-## 第一層目錄
+## 目錄結構
 
-| 主題 | 讀者帶著什麼問題來查 |
-| --- | --- |
-| 選題與可行性 | 哪些工作值得用 AI？資料、預算和負責人是否到位？ |
-| 流程與分工 | 工作怎麼拆？人與 AI 如何交接，又該怎麼接上既有系統？ |
-| 試行與交付 | 如何在小範圍跑完流程，交出可審查的成果？ |
-| 驗證與衡量 | 試行前要記錄哪些基線？如何驗收並比較品質、工時和返工？ |
-| 營運與擴大 | 如何培訓團隊、安排維護，並決定何時擴大採用？ |
-| 治理與管理 | 誰能核准、覆寫或暫停 AI？如何管理權限、風險與例外？ |
+**Layer 1** 是六個並列的主題入口。治理貫穿全程，基線在試行前記錄。
 
-六個主題是並列的查閱入口。治理貫穿全程，基線則在試行前記錄。
+**Layer 2** 按讀者帶來的問題組織，共 35 題。每題用一句話交代查閱範圍。
 
-## 專案結構
+| 主題 | 問題數 |
+| --- | ---: |
+| [選題與可行性](site/topics/feasibility.html) | 6 |
+| [流程與分工](site/topics/workflow.html) | 6 |
+| [試行與交付](site/topics/pilot.html) | 5 |
+| [驗證與衡量](site/topics/measurement.html) | 5 |
+| [營運與演進](site/topics/operations.html) | 7 |
+| [治理與管理](site/topics/governance.html) | 6 |
 
-- [`site/index.html`](site/index.html) — 第一層首頁。
-- [`site/styles.css`](site/styles.css) — 首頁樣式，沿用 Startup Radar 和能力庫的視覺風格。
+日常 token 用量監控放在營運與演進，按合格件數比較 token 效率放在驗證與衡量。
+
+**Layer 3** 將收錄具體工作方法和管理手段。一個方法可以對應多個問題，內容維護一份。條目會說明做法、適用情境與限制，並區分作者主張、公開案例和實測結果。
+
+## 專案檔案
+
+- `site/index.html` — Layer 1 首頁。
+- `site/topics/` — 六個 Layer 2 問題頁。
+- `site/styles.css` — 首頁與主題頁的共用樣式。
 - `content/` — 保留給方法與主題條目。
 - `sources/` — 保留給原始來源與研究筆記。
 
-## 內容規劃
-
-目前完成第一層首頁。第二層會按讀者的具體工作問題整理。方法條目先回答這是什麼做法、它改變哪一段工作，以及適用情境。有證據時，分開記錄作者主張、公開案例和實測結果。
+推送 `site/` 的變更到 `main` 時，GitHub Actions 會重新部署網站。

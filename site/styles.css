@@ -82,3 +82,61 @@ footer a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px
   .topic { padding-block: 16px; }
   .catalog { margin-bottom: 36px; }
 }
+
+/* Topic navigation and question directories */
+.topic { position: relative; }
+.topic:hover, .topic:focus-within { background: var(--selected); }
+.topic-title a { text-decoration: none; }
+.topic-title a:hover { text-decoration: underline; }
+.topic-title a::after { content: ""; position: absolute; inset: 0; }
+.topic-count { margin: 13px 0 0; color: var(--accent); font-size: 12px; }
+.topic-count span { margin-inline-start: 5px; }
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 20px 0 26px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.breadcrumb a, .topic-nav a { color: var(--accent); }
+.topic-layout {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: clamp(24px, 5vw, 64px);
+  margin-bottom: 52px;
+}
+.topic-nav {
+  align-self: start;
+  padding-inline-end: 16px;
+  border-inline-end: 1px solid var(--line);
+}
+.topic-nav h2 { margin: 0 0 7px 10px; color: var(--muted); font-size: 12px; }
+.topic-nav ul, .question-list { margin: 0; padding: 0; list-style: none; }
+.topic-nav a {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.topic-nav a:hover, .topic-nav a[aria-current="page"] { background: var(--selected); }
+.topic-nav a[aria-current="page"] { box-shadow: inset 3px 0 var(--accent); font-weight: 650; }
+.topic-content { max-width: 780px; }
+.topic-intro { margin-bottom: 30px; }
+.topic-intro p:last-child { margin: 0; color: var(--muted); }
+.question-list { border-top: 1px solid var(--line); }
+.question-item { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.question-item h3 { margin: 0 0 5px; color: var(--accent); font-size: 16px; font-weight: 650; }
+.question-item p { margin: 0; color: var(--muted); font-size: 14px; }
+
+@media (max-width: 740px) {
+  .topic-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; margin-bottom: 36px; }
+  .topic-nav { padding: 0 0 12px; border-inline-end: 0; border-bottom: 1px solid var(--line); }
+  .topic-nav ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px 8px; }
+  .breadcrumb { margin-bottom: 16px; }
+}
