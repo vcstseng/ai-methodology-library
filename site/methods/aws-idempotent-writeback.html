@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="讓相同工作重試時能被目的系統識別，避免重複寫入。">
+  <title>AWS 的安全重試與回寫｜AI 方法庫</title>
+  <link rel="stylesheet" href="../styles.css?v=3">
+</head>
+<body id="top">
+  <a class="skip-link" href="#content">跳到主要內容</a>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="wordmark" href="../index.html" lang="en"><span class="brand-dot" aria-hidden="true"></span>AI Methodology Library</a>
+      <span class="masthead-note">企業 AI 導入</span>
+    </header>
+    <main id="content">
+      <nav class="breadcrumb" aria-label="目前位置">
+        <a href="../index.html">方法目錄</a>
+        <span aria-hidden="true">/</span>
+        <a href="../topics/workflow.html">流程與分工</a>
+        <span aria-hidden="true">/</span>
+        <a href="../questions/knowledge-and-system-writeback.html">知識來源與系統回寫</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">AWS 的安全重試與回寫</span>
+      </nav>
+      <article class="reading-layout">
+        <header class="topic-intro">
+          <p class="eyebrow">系統整合 · Amazon Builders’ Library</p>
+          <h1>AWS 的安全重試與回寫</h1>
+          <p>讓相同工作重試時能被目的系統識別，避免重複寫入。</p>
+        </header>
+        <section class="reading-section" aria-labelledby="approach">
+          <h2 id="approach">原作者怎麼做</h2>
+          <ul class="reading-points">
+            <li>讓呼叫方為一次操作指定唯一識別碼，同一意圖重試時重用它。</li>
+            <li>目的系統依呼叫方和識別碼辨認重複請求，並把識別碼紀錄和寫入一起處理。</li>
+            <li>讓重試能取回意義相同的結果，降低逾時後無法確認是否已寫入的問題。</li>
+          </ul>
+        </section>
+        <section class="reading-section" aria-labelledby="fit">
+          <h2 id="fit">為什麼收在這一題</h2>
+          <p>這是 API 整合做法。目的系統若不支援，呼叫方不應只靠重試；先查詢實際狀態，或交由人確認。</p>
+        </section>
+        <section class="reading-section" id="sources" aria-labelledby="sources-title">
+          <div class="section-header">
+            <h2 id="sources-title">來源與證據</h2>
+            <span class="section-count">查核於 <time datetime="2026-11-09">2026-11-09</time></span>
+          </div>
+          <ul class="question-list source-list">
+            <li class="question-item">
+              <p class="entry-label">原始工程文章</p>
+              <h3><a href="https://d1.awsstatic.com/builderslibrary/pdfs/making-retries-safe-with-idempotent-apis-malcolm-featonby.pdf">Amazon Builders’ Library — Making retries safe with idempotent APIs</a></h3>
+              <p>說明唯一請求識別碼、重複請求、回應遺失和一致性。</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <a href="../questions/knowledge-and-system-writeback.html">返回問題頁</a>
+      <a href="#top">回到頂端 <span aria-hidden="true">↑</span></a>
+    </footer>
+  </div>
+</body>
+</html>

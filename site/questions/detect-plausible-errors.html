@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="查證關鍵來源、重算重要數字，並測試容易被表面答案掩蓋的錯誤。">
+  <title>怎麼抓出看起來正確、其實有錯的結果？｜AI 方法庫</title>
+  <link rel="stylesheet" href="../styles.css?v=3">
+</head>
+<body id="top">
+  <a class="skip-link" href="#content">跳到主要內容</a>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="wordmark" href="../index.html" lang="en"><span class="brand-dot" aria-hidden="true"></span>AI Methodology Library</a>
+      <span class="masthead-note">企業 AI 導入</span>
+    </header>
+    <main id="content">
+      <nav class="breadcrumb" aria-label="目前位置">
+        <a href="../index.html">方法目錄</a>
+        <span aria-hidden="true">/</span>
+        <a href="../topics/measurement.html">驗證與衡量</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">查證來源與重算</span>
+      </nav>
+      <div class="reading-layout">
+        <header class="topic-intro">
+          <p class="eyebrow">驗證與衡量</p>
+          <h1>怎麼抓出看起來正確、其實有錯的結果？</h1>
+          <p>查證關鍵來源、重算重要數字，並測試容易被表面答案掩蓋的錯誤。</p>
+        </header>
+        <section aria-labelledby="method-list-title">
+          <div class="section-header">
+            <h2 id="method-list-title">可參考的做法</h2>
+            <span class="section-count">2 個方法</span>
+          </div>
+          <ul class="question-list">
+            <li class="question-item">
+              <p class="entry-label">確認原文是否支持結論</p>
+              <h3><a href="../methods/nist-genai-source-verification.html">NIST 的生成式 AI 來源查證</a></h3>
+              <p>如果答案有引用，先確認來源真的存在，再回到原文檢查它是否支持關鍵說法。例如原文只描述一次案例，答案卻把它寫成普遍結果。把這類錯誤放進上線前測試和營運抽查。</p>
+            </li>
+            <li class="question-item">
+              <p class="entry-label">重算重要數字</p>
+              <h3><a href="../methods/aqua-analytical-assurance.html">GOV.UK AQuA Book 的分析覆核</a></h3>
+              <p>如果報表看起來完整，但結果會影響決策，可以從原始資料重算關鍵數字，或用另一種算法比對。遇到差異時，檢查輸入、篩選條件和假設，而不是只看最後一格數字。</p>
+            </li>
+          </ul>
+        </section>
+        <section class="reading-section" aria-labelledby="limits-title">
+          <h2 id="limits-title">適用範圍</h2>
+          <p>查證引文和重算數字會抓到不同錯誤。要優先查哪些內容，可從最影響決策的說法或數字開始。</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <a href="../topics/measurement.html#detect-plausible-errors">返回驗證與衡量</a>
+      <a href="#top">回到頂端 <span aria-hidden="true">↑</span></a>
+    </footer>
+  </div>
+</body>
+</html>

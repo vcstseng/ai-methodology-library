@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="先把新版本放到有限範圍，和未變更的版本比較，再決定繼續或回退。">
+  <title>Google SRE 的小流量試放與回退｜AI 方法庫</title>
+  <link rel="stylesheet" href="../styles.css?v=3">
+</head>
+<body id="top">
+  <a class="skip-link" href="#content">跳到主要內容</a>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="wordmark" href="../index.html" lang="en"><span class="brand-dot" aria-hidden="true"></span>AI Methodology Library</a>
+      <span class="masthead-note">企業 AI 導入</span>
+    </header>
+    <main id="content">
+      <nav class="breadcrumb" aria-label="目前位置">
+        <a href="../index.html">方法目錄</a>
+        <span aria-hidden="true">/</span>
+        <a href="../topics/pilot.html">試行與交付</a>
+        <span aria-hidden="true">/</span>
+        <a href="../questions/pilot-stop-and-rollback.html">停止試行與回退</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">Google SRE 的小流量試放與回退</span>
+      </nav>
+      <article class="reading-layout">
+        <header class="topic-intro">
+          <p class="eyebrow">發布管理 · Google SRE Workbook</p>
+          <h1>Google SRE 的小流量試放與回退</h1>
+          <p>先把新版本放到有限範圍，和未變更的版本比較，再決定繼續或回退。</p>
+        </header>
+        <section class="reading-section" aria-labelledby="approach">
+          <h2 id="approach">原作者怎麼做</h2>
+          <ul class="reading-points">
+            <li>只把一小部分正式流量送到新版本，其餘留在現行版本。</li>
+            <li>比較新舊版本的關鍵表現，例如錯誤率。當新版本明顯偏離控制組，先暫停。</li>
+            <li>視情況回退到先前可用版本，或通知人員調查後再決定是否恢復發布。</li>
+          </ul>
+        </section>
+        <section class="reading-section" aria-labelledby="fit">
+          <h2 id="fit">為什麼收在這一題</h2>
+          <p>原文是軟體發布做法。可借來設計技術回退，但不能代替人工作業備援，也不能撤銷已發生的外部操作。</p>
+        </section>
+        <section class="reading-section" id="sources" aria-labelledby="sources-title">
+          <div class="section-header">
+            <h2 id="sources-title">來源與證據</h2>
+            <span class="section-count">查核於 <time datetime="2026-11-09">2026-11-09</time></span>
+          </div>
+          <ul class="question-list source-list">
+            <li class="question-item">
+              <p class="entry-label">原始指引與示例</p>
+              <h3><a href="https://sre.google/workbook/canarying-releases/">Google SRE Workbook — Canarying Releases</a></h3>
+              <p>示範以控制版本的錯誤率為對照，說明何時暫停、回退或請人介入。</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <a href="../questions/pilot-stop-and-rollback.html">返回問題頁</a>
+      <a href="#top">回到頂端 <span aria-hidden="true">↑</span></a>
+    </footer>
+  </div>
+</body>
+</html>

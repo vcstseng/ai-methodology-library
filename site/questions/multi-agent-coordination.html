@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="釐清每個角色讀取與交付的內容，以及誰負責處理彼此的衝突。">
+  <title>多個 AI 一起做事時，怎麼分工、共享資訊和交接？｜AI 方法庫</title>
+  <link rel="stylesheet" href="../styles.css?v=3">
+</head>
+<body id="top">
+  <a class="skip-link" href="#content">跳到主要內容</a>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="wordmark" href="../index.html" lang="en"><span class="brand-dot" aria-hidden="true"></span>AI Methodology Library</a>
+      <span class="masthead-note">企業 AI 導入</span>
+    </header>
+    <main id="content">
+      <nav class="breadcrumb" aria-label="目前位置">
+        <a href="../index.html">方法目錄</a>
+        <span aria-hidden="true">/</span>
+        <a href="../topics/workflow.html">流程與分工</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">多 agent 分工、共用資訊與交接</span>
+      </nav>
+      <div class="reading-layout">
+        <header class="topic-intro">
+          <p class="eyebrow">流程與分工</p>
+          <h1>多個 AI 一起做事時，怎麼分工、共享資訊和交接？</h1>
+          <p>釐清每個角色讀取與交付的內容，以及誰負責處理彼此的衝突。</p>
+        </header>
+        <section aria-labelledby="method-list-title">
+          <div class="section-header">
+            <h2 id="method-list-title">可參考的做法</h2>
+            <span class="section-count">2 個方法</span>
+          </div>
+          <ul class="question-list">
+            <li class="question-item">
+              <p class="entry-label">先選交接與合併方式</p>
+              <h3><a href="../methods/azure-agent-orchestration.html">Azure 的多 agent 協作模式</a></h3>
+              <p>如果步驟有固定先後，用循序交接；如果子任務能獨立進行，可平行處理，再由指定角色匯整。Azure 的指引也提醒，先決定哪些資訊要共享、誰檢查下一步的輸入，以及結果矛盾時怎麼處理。</p>
+            </li>
+            <li class="question-item">
+              <p class="entry-label">給子 agent 清楚任務與獨立交付物</p>
+              <h3><a href="../methods/anthropic-multi-agent-research.html">Anthropic 的多 agent 研究系統</a></h3>
+              <p>如果研究可拆成幾個互不依賴的方向，可以參考 Anthropic 由主 agent 分派範圍和交付格式、子 agent 保留成果並交回連結的做法。主 agent 負責整合，不必把所有中間內容反覆傳給每個角色。</p>
+            </li>
+          </ul>
+        </section>
+        <section class="reading-section" aria-labelledby="limits-title">
+          <h2 id="limits-title">適用範圍</h2>
+          <p>單一 agent 或固定流程能完成時，先用較簡單的設計。若平行結果有衝突，應事先指定合併規則或誰需要人工裁決。</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <a href="../topics/workflow.html#multi-agent-coordination">返回流程與分工</a>
+      <a href="#top">回到頂端 <span aria-hidden="true">↑</span></a>
+    </footer>
+  </div>
+</body>
+</html>

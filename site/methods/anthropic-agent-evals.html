@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="把新能力的進步和既有工作是否退步分開看。">
+  <title>Anthropic 的能力測試與回歸測試｜AI 方法庫</title>
+  <link rel="stylesheet" href="../styles.css?v=3">
+</head>
+<body id="top">
+  <a class="skip-link" href="#content">跳到主要內容</a>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="wordmark" href="../index.html" lang="en"><span class="brand-dot" aria-hidden="true"></span>AI Methodology Library</a>
+      <span class="masthead-note">企業 AI 導入</span>
+    </header>
+    <main id="content">
+      <nav class="breadcrumb" aria-label="目前位置">
+        <a href="../index.html">方法目錄</a>
+        <span aria-hidden="true">/</span>
+        <a href="../topics/operations.html">營運與演進</a>
+        <span aria-hidden="true">/</span>
+        <a href="../questions/workflow-redesign.html">能力變動與流程重設</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">Anthropic 的能力測試與回歸測試</span>
+      </nav>
+      <article class="reading-layout">
+        <header class="topic-intro">
+          <p class="eyebrow">測試方法 · Anthropic</p>
+          <h1>Anthropic 的能力測試與回歸測試</h1>
+          <p>把新能力的進步和既有工作是否退步分開看。</p>
+        </header>
+        <section class="reading-section" aria-labelledby="approach">
+          <h2 id="approach">原作者怎麼做</h2>
+          <ul class="reading-points">
+            <li>從真實工作或常見失敗取樣，定義能判斷成功與否的條件。</li>
+            <li>用能力測試看尚未穩定完成的任務，用回歸測試確保既有行為仍達標。</li>
+            <li>在模型或 agent 改動時重跑測試。用營運監控與人工查閱補足測試沒涵蓋的情況。</li>
+          </ul>
+        </section>
+        <section class="reading-section" aria-labelledby="fit">
+          <h2 id="fit">為什麼收在這一題</h2>
+          <p>適合先回答改版值不值得試。對人機分工的影響，要再看流程裡哪些判斷或動作實際改了。</p>
+        </section>
+        <p><a href="../questions/ai-change-reassessment.html">相關問題：哪些變化會觸發重新審查？</a></p>
+        <p><a href="../questions/acceptance-criteria.html">相關問題：怎麼驗收 AI 的成果？</a></p>
+        <section class="reading-section" id="sources" aria-labelledby="sources-title">
+          <div class="section-header">
+            <h2 id="sources-title">來源與證據</h2>
+            <span class="section-count">查核於 <time datetime="2026-11-09">2026-11-09</time></span>
+          </div>
+          <ul class="question-list source-list">
+            <li class="question-item">
+              <p class="entry-label">原始指引與作者案例</p>
+              <h3><a href="https://www.anthropic.com/research/demystifying-evals-for-ai-agents">Anthropic — Demystifying evals for AI agents</a></h3>
+              <p>說明兩類測試及模型改版時的用法，並轉述 Descript 使用兩組測試的例子。案例可說明配置方式，未驗證任何組織改流程後必然改善。</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <a href="../questions/workflow-redesign.html">返回問題頁</a>
+      <a href="#top">回到頂端 <span aria-hidden="true">↑</span></a>
+    </footer>
+  </div>
+</body>
+</html>

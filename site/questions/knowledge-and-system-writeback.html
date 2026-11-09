@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="決定哪些資料可作為依據、由誰更新，以及結果如何回寫和處理失敗。">
+  <title>怎麼整理工作知識，讓 AI 用到正確的資料，並把結果送回既有系統？｜AI 方法庫</title>
+  <link rel="stylesheet" href="../styles.css?v=3">
+</head>
+<body id="top">
+  <a class="skip-link" href="#content">跳到主要內容</a>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="wordmark" href="../index.html" lang="en"><span class="brand-dot" aria-hidden="true"></span>AI Methodology Library</a>
+      <span class="masthead-note">企業 AI 導入</span>
+    </header>
+    <main id="content">
+      <nav class="breadcrumb" aria-label="目前位置">
+        <a href="../index.html">方法目錄</a>
+        <span aria-hidden="true">/</span>
+        <a href="../topics/workflow.html">流程與分工</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">知識來源與系統回寫</span>
+      </nav>
+      <div class="reading-layout">
+        <header class="topic-intro">
+          <p class="eyebrow">流程與分工</p>
+          <h1>怎麼整理工作知識，讓 AI 用到正確的資料，並把結果送回既有系統？</h1>
+          <p>決定哪些資料可作為依據、由誰更新，以及結果如何回寫和處理失敗。</p>
+        </header>
+        <section aria-labelledby="method-list-title">
+          <div class="section-header">
+            <h2 id="method-list-title">可參考的做法</h2>
+            <span class="section-count">2 個方法</span>
+          </div>
+          <ul class="question-list">
+            <li class="question-item">
+              <p class="entry-label">讓可用知識持續更新</p>
+              <h3><a href="../methods/kcs-knowledge-maintenance.html">KCS v6 的知識重用與維護</a></h3>
+              <p>若答案散在客服對話與舊文件裡，可借用 KCS：處理案件時先找既有知識，遇到不足就更新或標記，沒有才新增；再用文章的狀態和讀者範圍區分哪些內容可作為依據。</p>
+            </li>
+            <li class="question-item">
+              <p class="entry-label">避免逾時後重複寫入</p>
+              <h3><a href="../methods/aws-idempotent-writeback.html">AWS 的安全重試與回寫</a></h3>
+              <p>例如 AI 要把結果寫進客服系統，但請求逾時，不知道工單有沒有建立。AWS 的做法是讓同一個工作意圖使用同一個請求識別碼，系統可識別重試，避免再建立一筆。若目標系統沒有這種能力，先查狀態或交回人工。</p>
+            </li>
+          </ul>
+        </section>
+        <section class="reading-section" aria-labelledby="limits-title">
+          <h2 id="limits-title">適用範圍</h2>
+          <p>知識來源的治理和系統寫回是兩個設計問題。先確認內容能不能用，再確認寫回有沒有成功，兩者需要不同的驗證紀錄。</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <a href="../topics/workflow.html#knowledge-and-system-writeback">返回流程與分工</a>
+      <a href="#top">回到頂端 <span aria-hidden="true">↑</span></a>
+    </footer>
+  </div>
+</body>
+</html>

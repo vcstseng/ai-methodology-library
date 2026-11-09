@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="先約定停止條件、誰有權停止，以及怎麼恢復原有工作。">
+  <title>遇到什麼情況要停止試行，退回原本的做法？｜AI 方法庫</title>
+  <link rel="stylesheet" href="../styles.css?v=3">
+</head>
+<body id="top">
+  <a class="skip-link" href="#content">跳到主要內容</a>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="wordmark" href="../index.html" lang="en"><span class="brand-dot" aria-hidden="true"></span>AI Methodology Library</a>
+      <span class="masthead-note">企業 AI 導入</span>
+    </header>
+    <main id="content">
+      <nav class="breadcrumb" aria-label="目前位置">
+        <a href="../index.html">方法目錄</a>
+        <span aria-hidden="true">/</span>
+        <a href="../topics/pilot.html">試行與交付</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">停止試行與回退</span>
+      </nav>
+      <div class="reading-layout">
+        <header class="topic-intro">
+          <p class="eyebrow">試行與交付</p>
+          <h1>遇到什麼情況要停止試行，退回原本的做法？</h1>
+          <p>先約定停止條件、誰有權停止，以及怎麼恢復原有工作。</p>
+        </header>
+        <section aria-labelledby="method-list-title">
+          <div class="section-header">
+            <h2 id="method-list-title">可參考的做法</h2>
+            <span class="section-count">2 個方法</span>
+          </div>
+          <ul class="question-list">
+            <li class="question-item">
+              <p class="entry-label">先定什麼情況要停</p>
+              <h3><a href="../methods/nist-ai-deactivation.html">NIST 的 AI 停用與恢復條件</a></h3>
+              <p>如果試行可能影響正式工作，先寫清楚哪些情況要繞過或停用 AI、誰有權執行，以及停用後要如何維持服務。NIST 也建議留下事件紀錄，訂出可以重新啟用的條件。</p>
+            </li>
+            <li class="question-item">
+              <p class="entry-label">用現行版本做對照</p>
+              <h3><a href="../methods/google-canary-rollback.html">Google SRE 的小流量試放與回退</a></h3>
+              <p>如果新流程能先開給小部分使用者或流量，可以參考 Google SRE 的 canary 做法，同時看新舊版本的關鍵指標。新版本明顯變差時先停止擴大，再切回已知可用的版本或請人介入。</p>
+            </li>
+          </ul>
+        </section>
+        <section class="reading-section" aria-labelledby="limits-title">
+          <h2 id="limits-title">適用範圍</h2>
+          <p>技術上切回舊版，不會自動修正 AI 已送出的訊息或寫入的資料。試行前也要安排誰確認這些已發生的影響。</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <a href="../topics/pilot.html#pilot-stop-and-rollback">返回試行與交付</a>
+      <a href="#top">回到頂端 <span aria-hidden="true">↑</span></a>
+    </footer>
+  </div>
+</body>
+</html>

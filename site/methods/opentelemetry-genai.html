@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="以模型調用紀錄找出 token 消耗發生在哪個工作步驟。">
+  <title>OpenTelemetry GenAI 調用追蹤｜AI 方法庫</title>
+  <link rel="stylesheet" href="../styles.css?v=3">
+</head>
+<body id="top">
+  <a class="skip-link" href="#content">跳到主要內容</a>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="wordmark" href="../index.html" lang="en"><span class="brand-dot" aria-hidden="true"></span>AI Methodology Library</a>
+      <span class="masthead-note">企業 AI 導入</span>
+    </header>
+    <main id="content">
+      <nav class="breadcrumb" aria-label="目前位置">
+        <a href="../index.html">方法目錄</a>
+        <span aria-hidden="true">/</span>
+        <a href="../topics/operations.html">營運與演進</a>
+        <span aria-hidden="true">/</span>
+        <a href="../questions/token-usage-monitoring.html">Token 用量與費用監控</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">OpenTelemetry GenAI 調用追蹤</span>
+      </nav>
+      <article class="reading-layout">
+        <header class="topic-intro">
+          <p class="eyebrow">技術做法 · OpenTelemetry</p>
+          <h1>OpenTelemetry GenAI 調用追蹤</h1>
+          <p>以模型調用紀錄找出 token 消耗發生在哪個工作步驟。</p>
+        </header>
+        <section class="reading-section" aria-labelledby="approach">
+          <h2 id="approach">原作者怎麼做</h2>
+          <ul class="reading-points">
+            <li>以 GenAI 語意慣例記錄模型調用和可取得的輸入、輸出 token 數。</li>
+            <li>用追蹤紀錄把同一工作中的模型與工具呼叫放在一起看。若系統有記下重試，便可檢查異常是否來自重複調用。</li>
+            <li>用調用資料解釋用量變動；實際帳務另外和供應商費用資料核對。</li>
+          </ul>
+        </section>
+        <section class="reading-section" aria-labelledby="fit">
+          <h2 id="fit">為什麼收在這一題</h2>
+          <p>適合需要從總費用追到個別任務的團隊。對帳是本站整理的應用方式，實際能追到多少取決於使用的工具及埋點。</p>
+        </section>
+        <p><a href="../questions/cost-per-accepted-outcome.html">相關問題：每件合格成果的 token 與成本怎麼算？</a></p>
+        <section class="reading-section" id="sources" aria-labelledby="sources-title">
+          <div class="section-header">
+            <h2 id="sources-title">來源與證據</h2>
+            <span class="section-count">查核於 <time datetime="2026-11-09">2026-11-09</time></span>
+          </div>
+          <ul class="question-list source-list">
+            <li class="question-item">
+              <p class="entry-label">技術規格</p>
+              <h3><a href="https://github.com/open-telemetry/semantic-conventions-genai">OpenTelemetry GenAI Semantic Conventions</a></h3>
+              <p>規格來源，支持欄位與事件的定義。採用時應核對所用版本與工具的支援狀態。</p>
+            </li>
+            <li class="question-item">
+              <p class="entry-label">示範文章</p>
+              <h3><a href="https://opentelemetry.io/blog/2026/genai-observability/">Inside the LLM Call: GenAI Observability with OpenTelemetry</a></h3>
+              <p>示範如何檢視調用、追蹤與 token 指標。示範不是生產帳單或重試覆蓋率的驗證。</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <a href="../questions/token-usage-monitoring.html">返回問題頁</a>
+      <a href="#top">回到頂端 <span aria-hidden="true">↑</span></a>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="確認資料能否讀取和回寫，以及舊系統、權限或介面可能造成的限制。">
+  <title>既有系統接得上嗎？有哪些技術限制？｜AI 方法庫</title>
+  <link rel="stylesheet" href="../styles.css?v=3">
+</head>
+<body id="top">
+  <a class="skip-link" href="#content">跳到主要內容</a>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="wordmark" href="../index.html" lang="en"><span class="brand-dot" aria-hidden="true"></span>AI Methodology Library</a>
+      <span class="masthead-note">企業 AI 導入</span>
+    </header>
+    <main id="content">
+      <nav class="breadcrumb" aria-label="目前位置">
+        <a href="../index.html">方法目錄</a>
+        <span aria-hidden="true">/</span>
+        <a href="../topics/feasibility.html">選題與可行性</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">既有系統整合</span>
+      </nav>
+      <div class="reading-layout">
+        <header class="topic-intro">
+          <p class="eyebrow">選題與可行性</p>
+          <h1>既有系統接得上嗎？有哪些技術限制？</h1>
+          <p>確認資料能否讀取和回寫，以及舊系統、權限或介面可能造成的限制。</p>
+        </header>
+        <section aria-labelledby="method-list-title">
+          <div class="section-header">
+            <h2 id="method-list-title">可參考的做法</h2>
+            <span class="section-count">2 個方法</span>
+          </div>
+          <ul class="question-list">
+            <li class="question-item">
+              <p class="entry-label">先盤點資料路徑和相依系統</p>
+              <h3><a href="../methods/govuk-technology-integration.html">GOV.UK 的既有技術整合檢查</a></h3>
+              <p>AI 也許能整理客服摘要，但原系統可能只允許指定帳號寫入。先找出輸入來源、結果要到哪裡、途中經過哪些系統，並與系統負責人確認可用的介面和限制。</p>
+            </li>
+            <li class="question-item">
+              <p class="entry-label">驗證最有疑問的一段</p>
+              <h3><a href="../methods/microsoft-integration-poc.html">Microsoft Azure 的概念驗證</a></h3>
+              <p>如果文件上有 API，可在核准的測試環境確認是否真的能讀到指定欄位、回寫結果，並看權限不足或連線失敗時會發生什麼。Azure 的概念驗證指引可用來把這些疑問縮成明確的測試。</p>
+            </li>
+          </ul>
+        </section>
+        <section class="reading-section" aria-labelledby="limits-title">
+          <h2 id="limits-title">適用範圍</h2>
+          <p>先查系統介面和責任，再驗證最容易卡住的一段。可把只能人工回寫、只能讀取或還沒取得授權分開列出。</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <a href="../topics/feasibility.html#legacy-integration-feasibility">返回選題與可行性</a>
+      <a href="#top">回到頂端 <span aria-hidden="true">↑</span></a>
+    </footer>
+  </div>
+</body>
+</html>

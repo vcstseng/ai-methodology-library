@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="分開定義可讀、可寫與可執行的範圍，並指定各項權限的授權人。">
+  <title>AI 可以讀取哪些資料、執行哪些操作？誰能授權？｜AI 方法庫</title>
+  <link rel="stylesheet" href="../styles.css?v=3">
+</head>
+<body id="top">
+  <a class="skip-link" href="#content">跳到主要內容</a>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="wordmark" href="../index.html" lang="en"><span class="brand-dot" aria-hidden="true"></span>AI Methodology Library</a>
+      <span class="masthead-note">企業 AI 導入</span>
+    </header>
+    <main id="content">
+      <nav class="breadcrumb" aria-label="目前位置">
+        <a href="../index.html">方法目錄</a>
+        <span aria-hidden="true">/</span>
+        <a href="../topics/governance.html">治理與管理</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">資料、操作與授權</span>
+      </nav>
+      <div class="reading-layout">
+        <header class="topic-intro">
+          <p class="eyebrow">治理與管理 · 貫穿全程</p>
+          <h1>AI 可以讀取哪些資料、執行哪些操作？誰能授權？</h1>
+          <p>分開定義可讀、可寫與可執行的範圍，並指定各項權限的授權人。</p>
+        </header>
+        <section aria-labelledby="method-list-title">
+          <div class="section-header">
+            <h2 id="method-list-title">可參考的做法</h2>
+            <span class="section-count">2 個方法</span>
+          </div>
+          <ul class="question-list">
+            <li class="question-item">
+              <p class="entry-label">把權限縮到任務所需</p>
+              <h3><a href="../methods/owasp-excessive-agency.html">OWASP：防止 AI 權限過大</a></h3>
+              <p>如果 AI 只要查詢客戶資料，先給它查詢工具和唯讀權限。OWASP 建議讓下游系統自己驗證每一次操作，並在代替使用者行動時沿用該使用者的權限範圍。</p>
+            </li>
+            <li class="question-item">
+              <p class="entry-label">找出授權與審查責任</p>
+              <h3><a href="../methods/agent-operations-roles.html">Microsoft Agent CoE 的角色與責任</a></h3>
+              <p>如果平台團隊、資料負責人和業務團隊都能碰到同一個流程，可先參考 Microsoft 的角色與責任表，把平台、業務和治理團隊的決策分開，再確認每項資料或操作要由公司裡的哪個角色授權。</p>
+            </li>
+          </ul>
+        </section>
+        <section class="reading-section" aria-labelledby="limits-title">
+          <h2 id="limits-title">適用範圍</h2>
+          <p>角色分工表和系統權限各有用途。前者記錄誰能做決定，後者要實際限制 AI 可以讀取、寫入或執行的範圍。</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <a href="../topics/governance.html#ai-access-and-authorization">返回治理與管理</a>
+      <a href="#top">回到頂端 <span aria-hidden="true">↑</span></a>
+    </footer>
+  </div>
+</body>
+</html>
